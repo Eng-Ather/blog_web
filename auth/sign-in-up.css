@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid black;
+    background-color: rgb(149, 143, 143);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#signin_box,
+#signup_box {
+    width: 50%;
+    height: 70vh;
+    /* background-image: linear-gradient(to right,orange, rgb(237, 147, 147) ); */
+    background-color:  rgb(56, 45, 45);
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+#login_email,
+#signup_email,
+#signup_password,
+#login_password {
+    width: 98%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(199, 185, 185);
+}
+
+
+#login_email:hover,
+#signup_email:hover,
+#signup_password:hover,
+#login_password:hover 
+{
+    background-color: white;
+}
+
+a{
+    padding: 1px;
+    letter-spacing: 5px;
+    background-color: rgb(199, 185, 185);
+
+}
+
+#signin_btn,
+#signup_btn {
+    width: 98%;
+    margin: 0px auto;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    letter-spacing: 5px;
+    color: rgb(84, 83, 83);
+    background-color: rgb(199, 185, 185);
+
+}
+
+#signin_btn:hover,
+#signup_btn:hover {
+    background-color: white;
+    letter-spacing: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    
+}
+
+.signup_name {
+    width: 95%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#signup_fname,
+#signup_lname,
+#signup_image {
+    width: 100%;
+    background-color: rgb(199, 185, 185);
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+#signup_fname:hover,
+#signup_lname:hover,
+#signup_image:hover {
+    background-color: white;
+
+}
+
+@media only screen and (max-width: 550px)
+ {
+    
+    #signin_box,
+#signup_box {
+    width: 95%;
+    height: 90vh;
+    /* background-image: linear-gradient(to right,orange, rgb(237, 147, 147) ); */
+    background-color:  rgb(56, 45, 45);
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+.signup_name {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+}
+
+
