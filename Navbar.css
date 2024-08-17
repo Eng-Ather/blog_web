@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body {
+    width: 100%;
+    height: 100vh; */
+    /* border: 2px solid green; */
+    /* background-color: green; */
+    /* background-image: url(full-stack-developer-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+#nav_bar {
+    width: 100%;
+    height: 80px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 17px;
+    color: white;
+    background-color:  rgb(56, 45, 45);;
+    position: relative;
+}
+
+.logo {
+    border: 2px solid white;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+#search_bar {
+    border: 2px solid white;
+    color: white;
+    background-color:  rgb(56, 45, 45);;
+    width: 30%;
+    height: 35px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#search_bar:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#search_bar_input {
+    /* flex-grow: 1; */
+    width: 85%;
+    outline: none;
+    border: hidden;
+    background-color: transparent;
+    color: white;
+}
+
+#search_bar_input::placeholder {
+    color: white;
+}
+
+#menu_list_for_fullscreen{
+     width: 35%;
+    height: auto;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 17px;
+    /* border: 2px solid green; */
+
+}
+
+#menu_list {
+    display: none;
+    }
+
+#menu_list_for_fullscreen>li:hover, #menu_list>li:hover {
+        font-weight: bold;
+        letter-spacing: 2px;
+        transition: 0.5s;
+
+    }
+
+#drop_down {
+    border: none;
+    background-color:  rgb(56, 45, 45);;
+    color: white;
+    font-size: 17px;
+    transition: all 1s;
+}
+
+#drop_down>option {
+    background-color:  rgb(56, 45, 45);;
+    color: white;
+
+}
+
+#small_screen_menu_bar {
+    display: none;
+}
+
+
+@media only screen and (max-width:750px) {
+    
+    /* its will displayt on full screen here it will disappear */
+    #menu_list_for_fullscreen{
+        display: none;
+    }
+    
+    /* it will display on small screen as like drop down */
+    #menu_list {
+        width: 100%;
+        /* height: 150px; */
+        background-color:  rgb(56, 45, 45);;;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 17px;
+        position: absolute;
+        text-align: center;
+        left: 0px;
+        top: 78px;
+        display: none;
+    }
+
+    #menu_list>li {
+        padding-top: 20px;
+    }
+
+    .logo {
+        border: 2px solid white;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+
+    #search_bar {
+        border: 2px solid white;
+        /* background-color: gray; */
+        width: 60%;
+        height: 28px;
+        border-radius: 20px;
+        padding: 5px;
+        font-size: 10px;
+
+    }
+
+    #small_screen_menu_bar {
+        display: block;
+    }
+
+}

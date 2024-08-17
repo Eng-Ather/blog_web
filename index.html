@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website</title>
+
+    <!-- for tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- favicon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- css file naveBar -->
+    <link rel="stylesheet" href="Navbar.css">
+
+    <!-- css file responsive web -->
+    <!-- <link rel="stylesheet" href="dashboard.css"> -->
+
+
+    <!-- css file for main content -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav id="nav_bar">
+
+        <!-- logo in search bar -->
+        <img src="full-stack-developer-2.png" alt="" class="logo">
+
+        <!-- search bar in nav bar -->
+        <div id="search_bar">
+            <input type="search" placeholder="search here" id="search_bar_input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+        <!-- unorder list -->
+        <ul id="menu_list_for_fullscreen">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li><a href="auth/signin/index.html">Add Blog</a></li>
+        </ul>
+
+        <ul id="menu_list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li><a href="auth/signin/index.html">Add Blog</a></li>
+
+        </ul>
+
+        <i class="fa-solid fa-bars" id="small_screen_menu_bar"></i>
+
+    </nav>
+
+
+    <div class="css-vh">
+
+        <div class="center-part">
+
+            <!-- text box-->
+            <div class="new_blog">
+                       
+               <h1 id="new_blog_heading"> NEW Blog </h1>
+               <img id="new_blog_image" src="https://smartblogger.com/wp-content/uploads/2021/02/blogging-tips.jpg" alt="">
+                <p id="new_blog_decsriptio">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem earum quis, iusto ex qui quaerat accusamus deserunt blanditiis, eaque voluptas
+                    neque porro ullam ut ab, sit nam pariatur doloribus distinctio!
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem earum quis, iusto ex qui quaerat accusamus deserunt blanditiis, eaque voluptas
+                    neque porro ullam ut ab, sit nam pariatur doloribus distinctio!
+                    <br><br>
+                    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem earum quis, iusto ex qui quaerat accusamus deserunt blanditiis, eaque voluptas
+                    neque porro ullam ut ab, sit nam pariatur doloribus distinctio! -->
+                </p>
+            </div>
+
+
+            <div class="all_blog_box">
+
+                <div class="blog-list">
+                    <img class="object-cover coustom_img_size"
+                        src="https://smartblogger.com/wp-content/uploads/2021/02/blogging-tips.jpg" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-Xl font-bold text-white">Noteworthy technology acquisitions 2021</h5>
+                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4
+                        focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-0.5 
+                        dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                        Read More</button>
+                    </div>
+                </div>
+
+                <div class="blog-list">
+                    <img class="object-cover coustom_img_size"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2rFAJR-iUvefBNJlFjocGiPZPKM64jlQEaA&s" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-Xl font-bold text-white">Noteworthy technology acquisitions 2021</h5>
+                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4
+                        focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-0.5 
+                        dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                        Read More</button>
+                    </div>
+                </div>
+
+                <div class="blog-list">
+                    <img class="object-cover coustom_img_size"
+                        src="https://www.business2community.com/wp-content/uploads/2018/02/Blogging-For-Marketing-ENX2.jpg" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-Xl font-bold text-white">Noteworthy technology acquisitions 2021</h5>
+                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4
+                        focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-0.5 
+                        dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                        Read More</button>
+                    </div>
+                </div>
+
+                <div class="blog-list"> 3rd blog</div>
+                <div class="blog-list"> first blog</div>
+                <div class="blog-list"> second blog</div>
+                <div class="blog-list"> 3rd blog</div>
+                <div class="blog-list"> first blog</div>
+                <div class="blog-list"> second blog</div>
+                <div class="blog-list"> 3rd blog</div>
+                <div class="blog-list"> first blog</div>
+                <div class="blog-list"> second blog</div>
+                <div class="blog-list"> 3rd blog</div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>Footer</footer>
+
+    <!-- javascript file link -->
+    <script src="main.js" type="module"></script>
+
+    <script src="Navbar.js"></script>
+
+
+</body>
+
+</html>
