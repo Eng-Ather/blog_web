@@ -26,11 +26,12 @@ body {
 
 
 .new_blog {
-    border: 2px solid black;
+    border: 2px solid rgb(33, 205, 14);
     width: 70%;
+    height: 75vh;
     margin: 20px;
     padding-top: 10px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 #new_blog_heading{
@@ -103,7 +104,7 @@ overflow-y: auto;
 }
 
 footer {
-    min-height: 5%;
+    min-height: 4%;
     width: 100%;
     text-align: center;
     background-color:  rgb(56, 45, 45);;
